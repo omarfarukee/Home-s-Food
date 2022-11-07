@@ -11,19 +11,19 @@ const Home = () => {
                     <div className='back-img'>
                         <img src={pic1} className="w-full rounded-xl"/>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/3">
-                        <h1 className='text-6xl font-bold text-white'>
-                        your <br/>
-                         good<br/>
-                          food
+                    <div className="absolute flex justify-end transform -translate-y-1/2 top-40 left-24">
+                        <div className=''>
+                        <h1 className='text-6xl text-center font-bold text-white'>
+                                good for health
                         </h1>
+                        </div>
+                      
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                    <div className="absolute  transform -translate-y-1/2 top-1/3 left-24">
                         <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Nemo voluptatem quam quas sint, vel iusto consequuntur culpa maxime sapiente voluptatibus.</p>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-3/4">
-                        <button className="btn btn-outline btn-success mr-5">Success</button>
-                        <button className="btn btn-outline btn-warning">Warning</button>
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                        <button className="btn cursor-pointer btn-warning">get start</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide6" className="btn btn-circle mr-5">❮</a>
@@ -34,18 +34,16 @@ const Home = () => {
                 <div className='back-img'>
                         <img src={pic4} className="w-full rounded-xl"  />
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/3">
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-40">
                         <h1 className='text-6xl font-bold text-white'>
-                            The Genius Card <br />
-                            your best friend
+                        good food for you
                         </h1>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/3">
                         <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Nemo voluptatem quam quas sint, vel iusto consequuntur culpa maxime sapiente voluptatibus.</p>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-3/4">
-                        <button className="btn btn-outline btn-success mr-5">Success</button>
-                        <button className="btn btn-outline btn-warning">Warning</button>
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                        <button className="btn btn-outline btn-warning">get start</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle mr-5">❮</a>
@@ -56,21 +54,21 @@ const Home = () => {
                 <div className='back-img'>
                         <img src={pic3} className="w-full rounded-xl"  />
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/3">
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-40">
                         <h1 className='text-6xl font-bold text-white'>
-                            the best <br />
-                            ever ypu need
+                            the best
+                            ever you need
                         </h1>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/3">
                         <p className='text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Nemo voluptatem quam quas sint, vel iusto consequuntur culpa maxime sapiente voluptatibus.</p>
                     </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-3/4">
-                        <button className="btn btn-outline btn-success mr-5">Success</button>
-                        <button className="btn btn-outline btn-warning">Warning</button>
+                    <div className="absolute flex justify-end transform -translate-y-1/2 left-24 top-1/2">
+                      
+                        <button className="btn btn-outline btn-warning">get start</button>
                     </div>
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle mr-5">❮</a>
+                    <a href="#slide2" className="btn btn-circle mr-5">❮</a>
                         <a href="#slide1" className="btn btn-circle">❯</a>
                     </div>
                 </div>
