@@ -4,6 +4,7 @@ import pic from '../../image/pngwing.com (4).png'
 const Header = () => {
     const headItems = <>
         <li className='lg:pt-5'><Link to='/home'>Home</Link></li>
+        <li className='lg:pt-5'><Link to='/register'>Register</Link></li>
         {/* {
       user?.email ? <p className='pt-8 pl-2'>{user.email}</p>:<p className='pt-8 pl-2'>user not login</p>} */}
 

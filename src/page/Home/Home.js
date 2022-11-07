@@ -2,6 +2,7 @@ import React from 'react';
 import pic1 from '../../image/pic1.jpg'
 import pic3 from '../../image/pic3.jpg'
 import pic4 from '../../image/pexels-rajesh-tp-1600711.jpg'
+import HomeFoodCard from '../HomeFoodCard/HomeFoodCard';
 import ('./Home.css')
 const Home = () => {
     return (
@@ -73,6 +74,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+        <HomeFoodCard></HomeFoodCard>
         </div>
     );
 };

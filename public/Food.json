@@ -1,0 +1,44 @@
+[
+    {
+        "id" : 1 ,
+        "name" : "Chilly Burger",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":150,
+        "img":"https://images.pexels.com/photos/3219483/pexels-photo-3219483.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id" : 2 ,
+        "name" : "Hot pizza",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":250,
+        "img":"https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id" : 3 ,
+        "name" : "Fride Rice",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":210,
+        "img":"https://images.pexels.com/photos/14286683/pexels-photo-14286683.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id" : 4 ,
+        "name" : "Fish Fry",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":220,
+        "img":"https://images.pexels.com/photos/4967719/pexels-photo-4967719.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id" : 5 ,
+        "name" : "Test Pasta",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":180,
+        "img":"https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+        "id" : 6 ,
+        "name" : "Beef Kabab",
+        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "price":300,
+        "img":"https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+]
