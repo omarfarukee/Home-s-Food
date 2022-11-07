@@ -4,7 +4,9 @@ import './App.css';
 import Main from './layout/Main';
 import Home from './page/Home/Home';
 import Login from './page/Login/Login';
+import MyReview from './page/MyReview/MyReview';
 import Register from './page/Register/Register';
+import PrivateRoute from './Privaite/PrivateRoute';
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +25,10 @@ function App() {
         {
           path:'/login',
           element:<Login></Login>
+        },
+        {
+          path:'/review',
+          element:<PrivateRoute><MyReview></MyReview></PrivateRoute>
         },
       ]
     }

@@ -12,6 +12,7 @@ const Header = () => {
     }
     const headItems = <>
         <li className='lg:pt-5'><Link to='/home'>Home</Link></li>
+        <li className='lg:pt-5'><Link to='/review'>My-review</Link></li>
         
         {
         user?.email ?<button  onClick={handleLogOut} className='btn btn-warning mt-5'>Log-out</button>:
