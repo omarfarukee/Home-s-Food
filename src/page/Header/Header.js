@@ -1,12 +1,26 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import {Link} from 'react-router-dom'
+import { FaUserAlt} from 'react-icons/fa'
+import { AuthContext } from '../../ContextProvider/ContextProvider';
 import pic from '../../image/pngwing.com (4).png'
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext)
+    const handleLogOut = () =>{
+        logOut()
+        .then(() => {})
+        .catch(error => console.error(error))
+    }
     const headItems = <>
         <li className='lg:pt-5'><Link to='/home'>Home</Link></li>
+        
+        {
+        user?.email ?<button  onClick={handleLogOut} className='btn btn-warning mt-5'>Log-out</button>:
         <li className='lg:pt-5'><Link to='/register'>Register</Link></li>
-        {/* {
-      user?.email ? <p className='pt-8 pl-2'>{user.email}</p>:<p className='pt-8 pl-2'>user not login</p>} */}
+        }
+        {
+        user?.email ?<></>:
+        <li className='lg:pt-5'><Link to='/login'>Login</Link></li>
+        }
 
     </>
     return (
@@ -28,8 +42,11 @@ const Header = () => {
                         {headItems}
                     </ul>
                 </div>
-                <div className="navbar-end pt-5">
-                    <a className="btn">Get started</a>
+                <div className="navbar-end pt-3 pr-3">
+                    {
+                        user?.email ? <p>{user.email}</p>:
+                        <FaUserAlt></FaUserAlt>
+                    }
                 </div>
             </div>
         </div>
