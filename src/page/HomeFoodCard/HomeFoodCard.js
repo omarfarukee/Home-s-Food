@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import MapFoodCard from './MapFoodCard/MapFoodCard';
-
+import {Link} from 'react-router-dom'
 const HomeFoodCard = () => {
     const [cards, setCards] = useState([])
 
@@ -19,7 +19,9 @@ const HomeFoodCard = () => {
                 ></MapFoodCard>)
             }
             </div>
-          
+          <div className='flex justify-center mt-5 mb-5'>
+                <Link to='/viewAllFood'><button className='btn btn-success'>See All</button></Link>  
+          </div>
         </div>
     );
 };

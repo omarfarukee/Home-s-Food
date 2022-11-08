@@ -1,0 +1,27 @@
+.ans{
+    border-bottom:2px solid black;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.ans h1{
+    text-align: center;
+}
+.qus{
+    background-color:rgb(210, 176, 131);
+    margin:2%;
+    padding:3%;
+    border-radius:12px;
+    box-shadow:5px 10px 20px black;
+    color: black;
+}
+.qus:hover{
+    background-color:rgb(109, 90, 65);
+    color: white;
+}
+@media only screen  and (max-width: 687px){
+    .qus{
+       margin-top:20px;
+       margin-bottom: 20px;
+    }
+}
