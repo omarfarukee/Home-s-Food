@@ -18,6 +18,10 @@ function App() {
       element:<Main></Main>,
       children:[
         {
+          path:'/',
+          element:<Home></Home>
+        },
+        {
           path:'/home',
           element:<Home></Home>
         },
@@ -38,13 +42,13 @@ function App() {
           element:<PrivateRoute><MyReview></MyReview></PrivateRoute>
         },
         {
-          path:'/foods',
+          path:'/services',
           element:<ViewAllFood></ViewAllFood>,
         },
         {
-          path:'/foods/:id',
+          path:'/services/:id',
           element:<MoreDetails></MoreDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
         },
       ]
     }

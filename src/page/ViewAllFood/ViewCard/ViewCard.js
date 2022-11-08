@@ -11,7 +11,7 @@ const ViewCard = ({view}) => {
                     <p>{details.slice(0, 200)}...</p>
                     <h1>BDT :{price}</h1>
                     <div className="card-actions justify-end">
-                     <Link to={`/foods/${_id}`}> <button  className="btn btn-primary">More Details</button></Link>  
+                     <Link to={`/services/${_id}`}> <button  className="btn btn-primary">More Details</button></Link>  
                     </div>
                 </div>
             </div>

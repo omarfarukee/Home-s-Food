@@ -5,7 +5,7 @@ const HomeFoodCard = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() =>{
-        fetch('http://localhost:5000/foods')
+        fetch('http://localhost:5000/services')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
@@ -20,7 +20,7 @@ const HomeFoodCard = () => {
             }
             </div>
           <div className='flex justify-center mt-5 mb-5'>
-                <Link to='/foods'><button className='btn btn-success'>See All</button></Link>  
+                <Link to='/services'><button className='btn btn-success'>See All</button></Link>  
           </div>
         </div>
     );
