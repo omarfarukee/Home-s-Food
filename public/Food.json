@@ -1,44 +1,51 @@
 [
     {
-        "id" : 1 ,
         "name" : "Chilly Burger",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "food_id":"1",
+        "details":" While burgers are often viewed as junk food, it’s important to know that there are plenty of health benefits that you can reap. When you order from high-quality restaurants that use the finest ingredients, then burgers can be a wholesome addition to your diet. of the most impressive benefits of eating burgers is that you can get a hefty dose of protein. Protein is essential for maintaining or growing your muscle mass.rotein to your diet will also help you stay full for longer periods of time. As long as you choose mindful side dishes, then burgers can be an awesome meal to, cious enough to eat on a plain bun, lots of people prefer to spice things up with some fresh toppings. Some mouthwatering toppings could include lettuce, tomato, onion, avocado, pickle, sprouts, mushroom, and more.s at any time, you’ll have no trouble creating plans that will help you stay connected with al",
         "price":150,
-        "img":"https://images.pexels.com/photos/3219483/pexels-photo-3219483.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/3219483/pexels-photo-3219483.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
+        
     },
     {
-        "id" : 2 ,
-        "name" : "Hot pizza",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "name" : "Hot Pizza",
+        "food_id":"2",
+        "details":"Protein is an essential component of good health. Protein is what helps you to gain muscle, and make hair, blood, connective tissue, antibodies, enzymes, and more. Without enough protein in your diet, you’d start getting sick quite often. While everyone’s daily requirement for protein differs based on their body type and activity levels, it’s important to make sure that you are getting enough. One delicious way to do this is through pizza! The average slice contains 12 grams, which is a great way to get the protein you need while enjoying a delicious meal. We’re not going to lie, deep dish pizza is pretty great, but if you’re looking for healthier options, then try ordering your pizza with a thin crust. Not only does it contain fewer calories than a traditional pizza crust, but you’ll have a much better balance of carbohydrates, proteins, and fats. You’ve already seen a number of reasons that show why pizza is good for you, so why not make it even better with a thin crust? Besides, if the thinner crust makes you want to eat more, we won’t tell!If you’ve been considering ordering your next pizza on a whole wheat crust, but haven’t tried it yet, then let us provide you with some facts to convince you that it’s worth it. Whole wheat dough contains fewer carbs than white dough and it also has a higher fiber content. The higher fiber content means that you’ll feel full more quickly, which means that you’ll eat less. The good news is that our pizzas are great to take home with you and finish for your next meal — maybe breakfast",
         "price":250,
-        "img":"https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
     },
     {
-        "id" : 3 ,
-        "name" : "Fride Rice",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "name" : "Fried Rice",
+        "food_id":"3",
+        "details":" People often avoid eating calorific foods at lunch. But if you invite someone for lunch, you may have to prepare something unique and scrumptious (even if you do not want to). In such a situation, most people consider fried vegetable rice as a good and easy option. A large number of Chinese spices and meat and vegetables are added to Chinese fried rice. Fried vegetable rice is a little different from this. Fried rice is a dish of long-grained cooked rice that combines ingredients such as eggs, vegetables and spices mixed all together. This is usually the Indian version of fried rice. It does not use many herbs, and vegetables are also kept slightly raw. But at the same time, high amounts of carbs in it can cause weight gain! Also, it is not healthier for diabetes patients to consume it. Although it is a portion of comfort food, we share some tips to make it more beneficial for everyone.",
         "price":210,
-        "img":"https://images.pexels.com/photos/14286683/pexels-photo-14286683.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/14286683/pexels-photo-14286683.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
     },
     {
-        "id" : 4 ,
         "name" : "Fish Fry",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "food_id":"4",
+        "details":"Fish is among the healthiest foods on the planet. It’s loaded with important nutrients, such as protein and vitamin D. Fish is also a great source of omega-3 fatty acids, which are incredibly important for your body and brain.Here are 11 health benefits of eating fish that are supported by research.Fish is packed with many nutrients that most people are lacking.This includes high-quality protein, iodine, and various vitamins and minerals.Fatty species are sometimes considered the healthiest. That’s because fatty fish, including salmon, trout, sardines, tuna, and mackerel, are higher in fat-based nutrients.To meet your omega-3 requirements, eating fatty fish at least once or twice a week is recommended. If you are a vegan, opt for omega-3 supplements made from microalgae",
         "price":220,
-        "img":"https://images.pexels.com/photos/4967719/pexels-photo-4967719.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/4967719/pexels-photo-4967719.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
     },
     {
-        "id" : 5 ,
         "name" : "Test Pasta",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "food_id":"5",
+        "details":" When I think about foods that deliver on comfort, tradition and enjoyment, pasta is at the top of the list. In fact, pasta is a staple in the Mediterranean diet and can be culturally diverse. Pasta adds beneficial nutrients to the plate such as carbohydrate, fiber, protein, B vitamins and iron – in addition to being a perfect partner to protein and produce.I like to recommend pasta as a great food for all occasions. For instance, leftover pasta can be a quick and easy breakfast when tossed with an egg or some ricotta cheese. A bean-based pasta salad with grape tomatoes, sliced strawberries, fresh mozzarella and pesto is a nutritious and delicious lunch. Stir-fried chicken, beef, fish or tofu and vegetables is a great pairing with rice noodles.",
         "price":180,
-        "img":"https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
     },
     {
-        "id" : 6 ,
         "name" : "Beef Kabab",
-        "details":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti beatae voluptatibus consequuntur odit sapiente. Tempore repudiandae sunt sed, ea voluptatem quis id officiis veritatis doloribus accusantium dicta autem, ab vel. Labore cupiditate quasi modi? Tempora illo facilis obcaecati consequatur quaerat nostrum maiores unde reprehenderit ipsum fugit velit facere molestias recusandae ducimus enim nobis itaque ipsam, at tenetur vel numquam laborum nisi? Quae alias accusamus nemo voluptatem repudiandae sunt laboriosam magni optio nulla quidem asperiores aperiam qui porro eaque ut sit fuga, consequatur quam suscipit perferendis voluptates doloremque",
+        "food_id":"6",
+        "details":" A generation or two ago, our parents and grandparents viewed beef as a nutritious health food.But now? These days it’s much different, and opinion is split between whether beef is healthful or harms our health.Some of the more extreme vegan views even call for the authorities to remove meat from the food supply.Whatever our opinion on red meat might be, there are some important health benefits of eating beef.",
         "price":300,
-        "img":"https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img":"https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "start" : 4.5
     }
 ]

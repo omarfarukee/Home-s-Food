@@ -5,7 +5,7 @@ const ViewAllFood = () => {
     const [viewsAll, setViewsAll] = useState([])
 
     useEffect(() =>{
-        fetch('Food.json')
+        fetch('http://localhost:5000/foods')
         .then(res => res.json())
         .then(data => setViewsAll(data))
     },[])
@@ -14,7 +14,7 @@ const ViewAllFood = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 p-4 ml-10'>
                     {
                         viewsAll.map(view => <ViewCard
-                        key={view.id}
+                        key={view._id}
                         view={view}
                         ></ViewCard>)
                     }

@@ -38,13 +38,13 @@ function App() {
           element:<PrivateRoute><MyReview></MyReview></PrivateRoute>
         },
         {
-          path:'/viewAllFood',
+          path:'/foods',
           element:<ViewAllFood></ViewAllFood>,
         },
         {
-          path:'/viewAllFood/:id',
+          path:'/foods/:id',
           element:<MoreDetails></MoreDetails>,
-        loader: ({params}) => fetch(`Food.json/viewAllFood/${params.id}`)
+          loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
         },
       ]
     }
