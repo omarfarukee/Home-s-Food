@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { FaUserAlt } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import('./MoreDetails.css')
@@ -6,7 +7,7 @@ const MoreDetails = () => {
     const { user } = useContext(AuthContext)
     // console.log(user)
     const details = useLoaderData()
-    const {_id, start, price, name} = details
+    const {_id, start, price, name, img} = details
     const handleReview = (event) => {
         event.preventDefault();
         const form = event.target
@@ -14,7 +15,7 @@ const MoreDetails = () => {
         const names = form.name.value
         const photoURL = form.photoURL.value
         const email = user?.email 
-
+        // const userPhoto = user?.email ? user.photoURL : <p>alu</p>
         const orders ={
 
             buyerName : names,
@@ -24,12 +25,13 @@ const MoreDetails = () => {
             photoURL,
             message, 
             star : start,
-            foodName : name 
-
+            foodName : name ,
+            userPhoto : user?.photoURL ? user.photoURL : null,
+            img : img 
         }
        
 
-        fetch('http://localhost:5000/orders', {
+        fetch('http://localhost:5000/review', {
             method: 'POST',
             headers : {
                 'content-type' : 'application/json'
@@ -70,7 +72,7 @@ const MoreDetails = () => {
 
                 <form onSubmit={handleReview}>
                 <input name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3" required/> <br />
-                <input name='photoURL' type="text" placeholder="Photo URL" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br />
+                <input name='photoURL' type="text" placeholder="Photo URL (Optional)" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br />
                 <input name='email' type="email" placeholder="email" className="input input-bordered input-success w-full max-w-xs mb-3" defaultValue={user?.email}/> <br />
                     <textarea name='message' className="textarea textarea-success w-96" placeholder="Add your review" required></textarea> <br />
                     
