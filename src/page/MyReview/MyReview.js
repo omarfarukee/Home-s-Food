@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import TableReview from './TableReview/TableReview';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const MyReview = () => {
     const { user } = useContext(AuthContext)
     const [reviews, setReviews] = useState([])
@@ -14,7 +15,7 @@ const MyReview = () => {
             .then(data => setReviews(data))
 
     }, [user?.email])
-    
+
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure, want to delete this review?')
         if(proceed){
@@ -25,7 +26,17 @@ const MyReview = () => {
             .then(data => {
                 console.log(data)
                 if(data.deletedCount > 0) {
-                    alert('Deleted review successfully');
+                    // alert('Deleted review successfully')
+                    toast.success("Deleted Successfully", {
+                        position: "top-center",
+                        autoClose: 1000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                        });
                     const remaining = reviews.filter(rev => rev._id !== id)
                     setReviews(remaining)
                 }

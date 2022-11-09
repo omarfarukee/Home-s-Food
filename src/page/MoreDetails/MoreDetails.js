@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
@@ -15,7 +15,6 @@ const MoreDetails = () => {
         const names = form.name.value
         const photoURL = form.photoURL.value
         const email = user?.email 
-        // const userPhoto = user?.email ? user.photoURL : <p>alu</p>
         const orders ={
 
             buyerName : names,
@@ -49,6 +48,12 @@ const MoreDetails = () => {
         .catch(err => console.error(err))
     }
 
+
+    const [please, setPlease] = useState('')
+    const pleaseLogin = () =>{
+     const   logs = 'Please login first To add review'
+     setPlease(logs)
+    }
     return (
         <div className=''>
             <div className='flex justify-center'>
@@ -70,26 +75,24 @@ const MoreDetails = () => {
 
             <div className='flex justify-center border p-5'>
 
-                <form onSubmit={handleReview}>
+        <form onSubmit={handleReview}>
                 <input name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3" required/> <br />
                 <input name='photoURL' type="text" placeholder="Photo URL (Optional)" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br />
                 <input name='email' type="email" placeholder="email" className="input input-bordered input-success w-full max-w-xs mb-3" defaultValue={user?.email}/> <br />
                     <textarea name='message' className="textarea textarea-success w-96" placeholder="Add your review" required></textarea> <br />
                     
                     {
-                        user?.email ? <></>
-
-                 :  <div className="toast toast-top toast-start">
-                                <div className="alert alert-info">
-                                    <div>
-                                        <span>New mail arrived.</span>
-                                        <Link to='/login'> <button className='btn btn-warning'>Submit</button></Link>
-                                    </div>
-                                </div>
-                            </div>
-                    }
-                    <button className='btn btn-success'>Submit</button>
-                </form>
+                        user?.email ? <>
+                        <button className='btn btn-success'>Submit</button>
+                  </>:
+                    <div>
+                        <p className='mb-2'><Link to='/login' className='hover:text-green-500 border-b-2 text-blue-500'>{please} </Link></p>
+                         <button onClick={pleaseLogin} className='btn btn-success'>Submit</button>
+                        </div>
+                   
+                    }  
+                </form> 
+                
             </div>
         </div>
     );

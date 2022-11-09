@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 
 const TableReview = ({ review, handleDelete }) => {
     const {buyerName, img , star, email, message, foodName,serviceId ,photoURL, userPhoto, _id} = review
@@ -26,6 +27,16 @@ const TableReview = ({ review, handleDelete }) => {
                         </div>
                         <div className="card-actions justify-end">
                         <button onClick={() => handleDelete(_id)} className='btn btn-error'>Delete review</button>
+                        <ToastContainer position="top-center"
+                        autoClose={1000}
+                       hideProgressBar={false}
+                          newestOnTop={false}
+                            closeOnClick
+                              rtl={false}
+                      pauseOnFocusLoss
+                       draggable
+                        pauseOnHover
+                          theme="light" />
                         </div>
                     </div>
                     <p>{email}</p>

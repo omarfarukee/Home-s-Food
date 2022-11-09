@@ -11,6 +11,7 @@ import Register from './page/Register/Register';
 import ViewAllFood from './page/ViewAllFood/ViewAllFood';
 import PrivateRoute from './Privaite/PrivateRoute';
 import UpdateReview from './page/MyReview/UpdateReview/UpdateReview';
+import AddService from './page/AddService/AddService';
 
 function App() {
   const router = createBrowserRouter([
@@ -45,6 +46,10 @@ function App() {
         {
           path:'/services',
           element:<ViewAllFood></ViewAllFood>,
+        },
+        {
+          path:'/add',
+          element:<AddService></AddService>,
         },
         {
           path:'/services/:id',

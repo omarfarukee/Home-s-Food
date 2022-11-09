@@ -12,9 +12,11 @@ const Header = () => {
     }
     const headItems = <>
         <li className='lg:pt-5'><Link to='/home'>Home</Link></li>
-        <li className='lg:pt-5'><Link to='/review'>My-review</Link></li>
+      { user?.email ? <li className='lg:pt-5'><Link to='/review'>My-review</Link></li>: <></> }
         <li className='lg:pt-5'><Link to='/blog'>Blog</Link></li>
-        
+
+{    user?.email ? <li className='lg:pt-5'><Link to='/add'>Add Item</Link></li> : <></>
+}        
         {
         user?.email ?<button  onClick={handleLogOut} className='btn btn-warning mt-5'>Log-out</button>:
         <li className='lg:pt-5'><Link to='/register'>Register</Link></li>
@@ -46,7 +48,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end pt-3 pr-3">
                     {
-                        user?.email ? <p>{user.email}</p>:
+                        user?.email ? <p><img className='h-10 rounded-lg' title={user?.displayName} src={user.photoURL} alt="" /></p>:
                         <FaUserAlt></FaUserAlt>
                     }
                 </div>
