@@ -1,27 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 
-const TableReview = ({ review }) => {
+const TableReview = ({ review, handleDelete }) => {
     const {buyerName, img , star, message, foodName,serviceId ,photoURL,userPhoto, _id} = review
     const [itemReview ,setItemReview] =useState({})
+
     useEffect(() =>{
 
         fetch(`http://localhost:5000/services/${serviceId}`)
         .then(res => res.json())
         .then(data => setItemReview(data))
     }, [serviceId])
-    const handleDelete = _id =>{
-            const proceed = window.confirm('Are you sure, want to delete this review?')
-            if(proceed){
-                fetch( `http://localhost:5000/review/${_id}`, {
-                    method: 'DELETE'
-                })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data)
-                })
-            }
-    }
+
     return (
  
             <tr>
