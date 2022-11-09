@@ -9,3 +9,55 @@
     display: inline-block;
     background: linear-gradient( rgba(0,0,0,0.65), rgba(0,0,0,0.65) );
 }
+.slides img{
+    height: 100%;
+}
+@media only screen  and (max-width: 687px){
+
+    .slides img{
+        height: 100%;
+    }
+    .text-t{
+        font-size:20px;
+        text-align:center;
+    }
+    .text-p{
+        font-size:12px;
+    }
+    /* for section One */
+    .sec-pic{
+        width: 96%;
+        margin-left:10px;
+    }
+    .sec-p{
+        margin-top:40px;
+        width: 95%;
+        margin-left:10px;
+        margin-right:5px;
+    }
+    .card-food{
+        width:95%;
+    }
+    /* home.js */
+    .h-img{
+        height:45px;
+        
+    }
+    .h-food{
+        font-size:20px;
+        margin-right:10px;
+    }
+    .h-u-img{
+        height:35px;
+        border-radius: 50%;
+    }
+
+    /*  viewAllfood.js */
+    .viewFood{
+        width: 100%;
+    }
+    /* viewCard.js */
+    .n-card{
+        width:95%;
+    }
+}

@@ -51,7 +51,7 @@ const MyReview = () => {
            
             { reviews.length === 0 ? <div className='text-3xl flex justify-center mb-3'><h1>No review were added</h1></div>
              :
-            <div className="overflow-x-auto w-full p-10 mb-3 grid lg:grid-cols-3 md:grid-cols-2">
+            <div className="overflow-x-auto w-full lg:p-10 mb-3 grid lg:grid-cols-3 md:grid-cols-2">
 
                         {
                             reviews.map(review => <TableReview

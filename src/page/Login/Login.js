@@ -53,8 +53,9 @@ const Login = () => {
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
+                                <p className='mt-2 ml-14'>New in here? <Link className='text-blue-700 hover:text-blue-900' to='/register'>Register now</Link></p>
                             </div>
-                            <p>{error}</p>
+                            <p className='text-red-500 ml-5'>{error}</p>
                         </form>
                     </div>
                 </div>

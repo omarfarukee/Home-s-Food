@@ -1,6 +1,7 @@
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ('../MoreDetails/MoreDetails.css')
 const AddService = () => {
     const handleItem = (event) => {
         event.preventDefault();
@@ -49,13 +50,13 @@ const AddService = () => {
         .catch(err => console.error(err))
     }
     return (
-        <div className='flex justify-center p-4'>
-            <form onSubmit={handleItem}>
-                <input name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3" required/> <br />
-                <input name='photoURL' type="text" placeholder="Photo URL" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br />
-                <input name='price' type="text" placeholder="Add price" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br /> 
-                <input name='start' type="text" placeholder="Add rating" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br /> 
-                <textarea name='details' className="textarea textarea-success w-96" placeholder="write about your item" required></textarea> <br />
+        <div className='flex justify-center lg:p-4 md:p-4 add-form border'>
+            <form onSubmit={handleItem} >
+                <input  name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3 input-form" required/> <br />
+                <input  name='photoURL' type="text" placeholder="Photo URL" className="input input-bordered input-success w-full max-w-xs mb-3 input-form" /> <br />
+                <input  name='price' type="text" placeholder="Add price" className="input input-bordered input-success w-full max-w-xs mb-3 input-form" /> <br /> 
+                <input  name='start' type="text" placeholder="Add rating" className="input input-bordered input-success w-full max-w-xs mb-3 input-form" /> <br /> 
+                <textarea name='details' className="textarea textarea-success w-96 area-area" placeholder="write about your item" required></textarea> <br />
                 <button className='btn btn-success'>Submit</button> 
                 <ToastContainer position="top-center"
                         autoClose={1000}

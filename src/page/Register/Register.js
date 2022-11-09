@@ -80,7 +80,7 @@ const Register = () => {
                                 </label>
                                 <input type="password" name='password' placeholder="Enter password" className="input input-bordered" required/>
                                 <label className="label">
-                                    <a href="" className="label-text-alt link link-hover">Already have account?</a>
+                                    <a href="" className="label-text-alt link link-hover" >Already have account?</a>
                                 </label>
                                 <p>{error}</p>
                             </div>
@@ -90,6 +90,9 @@ const Register = () => {
                         </form>
                         <div  className="form-control  w-10/12 btn-google">
                              <button onClick={handleGoogle} className="btn btn-primary"><FaGoogle></FaGoogle> Sign Up With Google</button>
+                             <p className='mt-2 ml-10'>Already have an 
+                             account? <Link className='text-blue-700 hover:text-blue-900' to='/login'>Login</Link></p>
+
                         </div>
                     </div>
                 </div>

@@ -70,16 +70,16 @@ const MoreDetails = () => {
             </div>
 
             <div className='flex justify-center font-bold'>
-                <h1 className='mb-5 text-2xl'>{user?.displayName} Through your Review here</h1>
+                <h1 className='mb-5 text-2xl more-h1'>'{user?.displayName}' Add your Review here</h1>
             </div>
 
-            <div className='flex justify-center border p-5'>
+    <div className='flex justify-center border lg:p-5 md:p-5 more-form'>
 
         <form onSubmit={handleReview}>
                 <input name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3" required/> <br />
                 <input name='photoURL' type="text" placeholder="Photo URL (Optional)" className="input input-bordered input-success w-full max-w-xs mb-3" /> <br />
                 <input name='email' type="email" placeholder="email" className="input input-bordered input-success w-full max-w-xs mb-3" defaultValue={user?.email}/> <br />
-                    <textarea name='message' className="textarea textarea-success w-96" placeholder="Add your review" required></textarea> <br />
+                    <textarea name='message' className="textarea textarea-success lg:w-96 md:w-96 area-text" placeholder="Add your review" required></textarea> <br />
                     
                     {
                         user?.email ? <>

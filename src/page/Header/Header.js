@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { FaUserAlt} from 'react-icons/fa'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import pic from '../../image/pngwing.com (4).png'
+import ('../Home/Home.css')
 const Header = () => {
     const {user, logOut} = useContext(AuthContext)
     const handleLogOut = () =>{
@@ -39,7 +40,7 @@ const Header = () => {
                             {headItems}
                         </ul>
                     </div>
-                    <Link to='/' className="btn btn-ghost mb-3"><img className='h-16 ' src={pic} alt="" /><span className='text-2xl font-bold'> Home's Food </span></Link>
+                    <Link to='/' className="btn btn-ghost mb-3"><img className='h-16 h-img' src={pic} alt="" /><span className='text-2xl font-bold h-food'> Home's Food </span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal p-0">
@@ -48,7 +49,7 @@ const Header = () => {
                 </div>
                 <div className="navbar-end pt-3 pr-3">
                     {
-                        user?.email ? <p><img className='h-10 rounded-lg' title={user?.displayName} src={user.photoURL} alt="" /></p>:
+                        user?.email ? <p><img className='h-10 rounded-lg h-u-img' title={user?.displayName} src={user.photoURL} alt="" /></p>:
                         <FaUserAlt></FaUserAlt>
                     }
                 </div>

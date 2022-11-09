@@ -7,7 +7,7 @@ const MapFoodCard = ({ card }) => {
     return (
         <div>
                  
-            <div className="card card-compact w-96  bg-black shadow-xl mb-3">
+            <div className="card card-compact lg:w-96 md:w-96 card-Food bg-black shadow-xl mb-3">
             <PhotoProvider>
       <PhotoView src={img}>
       <figure><img className='h-60 w-full' src={img} alt="" /></figure>

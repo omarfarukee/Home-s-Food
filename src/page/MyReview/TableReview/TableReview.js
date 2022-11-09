@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
-
+import ('../../MoreDetails/MoreDetails.css')
 const TableReview = ({ review, handleDelete }) => {
     const {buyerName, img , star, email, message, foodName,serviceId ,photoURL, userPhoto, _id} = review
     const [itemReview ,setItemReview] =useState({})
@@ -17,7 +17,7 @@ const TableReview = ({ review, handleDelete }) => {
     return (
  
         <div>
-            <div className="card card-compact w-96  bg-black shadow-xl mb-3">
+            <div className="card card-compact lg:w-96 md:w-96 table-card  bg-black shadow-xl mb-3">
                 <figure>{itemReview?.img &&  <img className='h-60 w-full' src={itemReview.img} alt="" />}</figure>
                 <div className="card-body">
                     <div className='flex justify-between items-center'>
