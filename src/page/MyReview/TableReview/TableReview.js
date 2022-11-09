@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const TableReview = ({ review, handleDelete }) => {
-    const {buyerName, img , star, message, foodName,serviceId ,photoURL,userPhoto, _id} = review
+    const {buyerName, img , star, email, message, foodName,serviceId ,photoURL, userPhoto, _id} = review
     const [itemReview ,setItemReview] =useState({})
 
     useEffect(() =>{
@@ -14,34 +15,31 @@ const TableReview = ({ review, handleDelete }) => {
 
     return (
  
-            <tr>
-                <th>
-                    <label>
-                        <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>X</button>
-                    </label>
-                </th>
-                <td>
-                    <div className="flex items-center space-x-3">
-                        <div className="avatar">
-                            <div className=" rounded w-12 h-12 ">
-                                {itemReview?.img &&  <img className='' src={itemReview.img} alt="" />}
-                                
-                            </div>
-                        </div>
+        <div>
+            <div className="card card-compact w-96  bg-black shadow-xl mb-3">
+                <figure>{itemReview?.img &&  <img className='h-60 w-full' src={itemReview.img} alt="" />}</figure>
+                <div className="card-body">
+                    <div className='flex justify-between items-center'>
                         <div>
-                            <div className="font-bold">{foodName}</div>
+                            <h2 className="card-title">Items :{foodName}</h2>
+                            
+                        </div>
+                        <div className="card-actions justify-end">
+                        <button onClick={() => handleDelete(_id)} className='btn btn-error'>Delete review</button>
                         </div>
                     </div>
-                </td>
-                <td>
-                   {message}
-                </td>
-                <td>{buyerName}</td>
-                <img className="mask mask-hexagon-2 h-16 mt-1" alt='' src={photoURL} />
-                <th>
-                    <button className="btn btn-ghost btn-xs"><FaStar></FaStar> {star}</button>
-                </th>
-            </tr>
+                    <p>{email}</p>
+                    <p>Your review :</p>
+                    <div className='border h-52 rounded p-2 overflow-scroll'>
+                   <p className=''> {message}</p><br /> 
+                    </div>
+                    <Link to={`/update/${_id}`}><button className="btn btn-sm mt-2">Edit Review</button></Link>
+                    <p className='mt-11  flex items-center'> Rating: <span className='flex ml-2 items-center'><FaStar className='text-yellow-500'></FaStar>{star}<img className="mask mask-circle h-11 ml-14" src={photoURL} alt='' /><h1>{buyerName}</h1></span></p> 
+                    
+                    
+                </div>
+            </div>
+        </div> 
 
     );
 };

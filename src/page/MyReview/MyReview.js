@@ -14,6 +14,7 @@ const MyReview = () => {
             .then(data => setReviews(data))
 
     }, [user?.email])
+    
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure, want to delete this review?')
         if(proceed){
@@ -33,25 +34,13 @@ const MyReview = () => {
 }
     return (
         <div>
-            <h1>this my review {reviews.length}</h1>
-            <div className="overflow-x-auto w-full p-7 border">
-                <table className="table w-full">
-
-                    <thead>
-                        <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" className="checkbox" />
-                                </label>
-                            </th>
-                            <th>Food Item Name</th>
-                            <th>Review</th>
-                            <th>Customer name</th>
-                            <th>Picture</th>
-                            <th>Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <div className='flex justify-center text-2xl mt-2 font-bold'>
+                 <h1 >My reviews: {reviews.length}</h1>
+            </div>
+           
+            { reviews.length === 0 ? <div className='text-3xl flex justify-center mb-3'><h1>No review were added</h1></div>
+             :
+            <div className="overflow-x-auto w-full p-10 mb-3 grid lg:grid-cols-3 md:grid-cols-2">
 
                         {
                             reviews.map(review => <TableReview
@@ -60,10 +49,7 @@ const MyReview = () => {
                                 handleDelete={handleDelete}
                             ></TableReview>)
                         }
-
-                    </tbody>
-                </table>
-            </div>
+            </div>}
         </div>
     );
 };

@@ -10,6 +10,7 @@ import MyReview from './page/MyReview/MyReview';
 import Register from './page/Register/Register';
 import ViewAllFood from './page/ViewAllFood/ViewAllFood';
 import PrivateRoute from './Privaite/PrivateRoute';
+import UpdateReview from './page/MyReview/UpdateReview/UpdateReview';
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +50,11 @@ function App() {
           path:'/services/:id',
           element:<MoreDetails></MoreDetails>,
           loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+        },
+        {
+          path:'/update/:id',
+          element:<UpdateReview></UpdateReview>,
+          loader: ({params}) => fetch(`http://localhost:5000/review/${params.id}`)
         },
       ]
     }
