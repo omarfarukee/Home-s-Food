@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { FaAlignRight, FaUserAlt } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
+import AllReviews from './Allreviews/AllReviews';
 import('./MoreDetails.css')
 const MoreDetails = () => {
     useEffect(() =>{
@@ -64,7 +65,8 @@ const MoreDetails = () => {
                 <div className="card  bg-base-100 shadow-xl border p-6 w-3/4 mb-5">
                     <figure><img className='rounded-xl' src={details.img} alt="Album" /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">{details.name}</h2>
+                        <h2 className="card-title">Item name : {details.name}</h2> 
+                        <h1>price : {details.price} TK</h1>
                         <p>{details.details}</p>
                         <div className="card-actions justify-end">
                             <Link to='/home'><button className="btn btn-primary">Back Home</button></Link>
@@ -77,7 +79,7 @@ const MoreDetails = () => {
                 <h1 className='mb-5 text-2xl more-h1'>'{user?.displayName}' Add your Review here</h1>
             </div>
 
-    <div className='flex justify-center border lg:p-5 md:p-5 more-form'>
+    <div className='flex justify-center lg:p-5 md:p-5 more-form'>
 
         <form onSubmit={handleReview}>
                 <input name='name' type="text" placeholder="Name" className="input input-bordered input-success w-full max-w-xs mb-3" required/> <br />
@@ -97,6 +99,9 @@ const MoreDetails = () => {
                     }  
                 </form> 
                 
+            </div>
+            <div className='mt-7'>
+                <AllReviews></AllReviews>
             </div>
         </div>
     );

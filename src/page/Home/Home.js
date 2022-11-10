@@ -8,6 +8,7 @@ import pic8 from '../../image/pic8.jpg'
 import HomeFoodCard from '../HomeFoodCard/HomeFoodCard';
 import LimitedCard from './LimitedCard/LimitedCard';
 import SectionOne from './SectionOne/SectionOne';
+import SectionTwo from './SectionTwo/SectionTwo';
 import ('./Home.css')
 const Home = () => {
     useEffect(() =>{
@@ -84,6 +85,7 @@ const Home = () => {
         {/* <HomeFoodCard></HomeFoodCard> */}
         <LimitedCard></LimitedCard>
         <SectionOne></SectionOne>
+        <SectionTwo></SectionTwo>
         </div>
     );
 };

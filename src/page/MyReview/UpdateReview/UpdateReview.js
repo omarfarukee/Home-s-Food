@@ -1,5 +1,7 @@
 import React, { useState,useContext , useEffect} from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../../../ContextProvider/ContextProvider';
 import ('../../MoreDetails/MoreDetails.css')
 const UpdateReview = () => {
@@ -26,7 +28,17 @@ const UpdateReview = () => {
             .then(data => {
                 console.log(data)
                 if (data.modifiedCount > 0){
-                    alert('user updated')
+                    // alert('user updated')
+                    toast.success("update review Successfully", {
+                        position: "top-center",
+                        autoClose: 1000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                        });
                     console.log(data);
                 }
                 
@@ -57,7 +69,16 @@ const UpdateReview = () => {
                     <h1 className='mb-4 font-bold text-green-500'>'' Your review</h1>
                     <textarea onChange={handleChange} defaultValue={newReview.message} type="text" name='message'  className="textarea textarea-success w-full items-center" placeholder="Bio"></textarea> <br />
                     <button className='btn btn-success mt-2'>Update Review</button>
-               
+                    <ToastContainer position="top-center"
+                        autoClose={1000}
+                       hideProgressBar={false}
+                          newestOnTop={false}
+                            closeOnClick
+                              rtl={false}
+                      pauseOnFocusLoss
+                       draggable
+                        pauseOnHover
+                          theme="light" /> 
              </form>
             </div>
           
