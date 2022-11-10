@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { FaUserAlt } from 'react-icons/fa';
+import { FaAlignRight, FaUserAlt } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import('./MoreDetails.css')
@@ -51,7 +51,7 @@ const MoreDetails = () => {
 
     const [please, setPlease] = useState('')
     const pleaseLogin = () =>{
-     const   logs = 'Please login first To add review'
+     const  logs = 'Please login first To add review'
      setPlease(logs)
     }
     return (
@@ -83,11 +83,11 @@ const MoreDetails = () => {
                     
                     {
                         user?.email ? <>
-                        <button className='btn btn-success'>Submit</button>
+                        <button className='btn btn-success hover:bg-green-400 hover:text-black'><FaAlignRight className='mr-2'></FaAlignRight> Submit</button>
                   </>:
                     <div>
-                        <p className='mb-2'><Link to='/login' className='hover:text-green-500 border-b-2 text-blue-500'>{please} </Link></p>
-                         <button onClick={pleaseLogin} className='btn btn-success'>Submit</button>
+                        <p className='mb-2'><Link to='/login' className='hover:text-green-500 border-b-2 text-blue-500'>{please}</Link></p>
+                         <button onClick={pleaseLogin} className='btn btn-success  hover:bg-green-400 hover:text-black'><FaAlignRight className='mr-2'></FaAlignRight>Submit</button>
                         </div>
                    
                     }  

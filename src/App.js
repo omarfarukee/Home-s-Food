@@ -12,6 +12,8 @@ import ViewAllFood from './page/ViewAllFood/ViewAllFood';
 import PrivateRoute from './Privaite/PrivateRoute';
 import UpdateReview from './page/MyReview/UpdateReview/UpdateReview';
 import AddService from './page/AddService/AddService';
+import LimitedCard from './page/Home/LimitedCard/LimitedCard';
+import HomeFoodCard from './page/HomeFoodCard/HomeFoodCard';
 
 function App() {
   const router = createBrowserRouter([
@@ -45,11 +47,16 @@ function App() {
         },
         {
           path:'/services',
-          element:<ViewAllFood></ViewAllFood>,
+          // element: <ViewAllFood></ViewAllFood>,
+          element: <HomeFoodCard></HomeFoodCard>,
+        },
+        {
+          path:'/servicess',
+          element:<LimitedCard></LimitedCard>,
         },
         {
           path:'/add',
-          element:<AddService></AddService>,
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>,
         },
         {
           path:'/services/:id',

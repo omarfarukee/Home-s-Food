@@ -12,7 +12,7 @@ const HomeFoodCard = () => {
     },[])
     return (
         <div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 p-4 border lg:ml-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 p-4 lg:ml-10'>
                   {
                 cards.map(card => <MapFoodCard
                 key={card._id}
@@ -20,9 +20,6 @@ const HomeFoodCard = () => {
                 ></MapFoodCard>)
             }
             </div>
-          <div className='flex justify-center mt-5 mb-5'>
-                <Link to='/services'><button className='btn btn-success'>See All</button></Link>  
-          </div>
         </div>
     );
 };

@@ -24,6 +24,18 @@
     .text-p{
         font-size:12px;
     }
+   
+    .reg-btn{
+        display:none;
+    }
+    .log-btn{
+        margin-bottom: 5px;
+    }
+    .log-out{
+        width:50px;
+        font-size:10px;
+    }
+
     /* for section One */
     .sec-pic{
         width: 96%;
@@ -41,11 +53,12 @@
     /* home.js */
     .h-img{
         height:45px;
-        
+        margin-top:8px;
     }
     .h-food{
-        font-size:20px;
+        font-size:12px;
         margin-right:10px;
+        margin-top:10px;
     }
     .h-u-img{
         height:35px;

@@ -6,12 +6,13 @@ import pic5 from '../../image/pic5.jpg'
 import pic6 from '../../image/pic6.jpg'
 import pic8 from '../../image/pic8.jpg'
 import HomeFoodCard from '../HomeFoodCard/HomeFoodCard';
+import LimitedCard from './LimitedCard/LimitedCard';
 import SectionOne from './SectionOne/SectionOne';
 import ('./Home.css')
 const Home = () => {
     return (
         <div>
-            <div className="carousel w-full slides border">
+            <div className="carousel w-full slides ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <div className='back-img'>
                         <img src={pic5} className="w-full rounded-xl"/>
@@ -77,7 +78,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        <HomeFoodCard></HomeFoodCard>
+        {/* <HomeFoodCard></HomeFoodCard> */}
+        <LimitedCard></LimitedCard>
         <SectionOne></SectionOne>
         </div>
     );

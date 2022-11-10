@@ -12,4 +12,8 @@
     .reg-container{
         width: 96%;
     }
+    .account{
+        font-size: 15px;
+        margin-left:10%;
+    }
 }

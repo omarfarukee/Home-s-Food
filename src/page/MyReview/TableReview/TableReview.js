@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FaStar } from 'react-icons/fa';
+import { FaRecycle, FaStar, FaWindowClose,} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import ('../../MoreDetails/MoreDetails.css')
@@ -26,7 +26,7 @@ const TableReview = ({ review, handleDelete }) => {
                             
                         </div>
                         <div className="card-actions justify-end">
-                        <button onClick={() => handleDelete(_id)} className='btn btn-error'>Delete review</button>
+                        <button onClick={() => handleDelete(_id)} className='btn btn-error hover:bg-red-400 hover:text-black'><FaWindowClose className='mr-2'></FaWindowClose> Delete review</button>
                         <ToastContainer position="top-center"
                         autoClose={1000}
                        hideProgressBar={false}

@@ -18,14 +18,7 @@ const Header = () => {
 
 {    user?.email ? <li className='lg:pt-5'><Link to='/add'>Add Item</Link></li> : <></>
 }        
-        {
-        user?.email ?<button  onClick={handleLogOut} className='btn btn-warning mt-5'>Log-out</button>:
-        <li className='lg:pt-5'><Link to='/register'>Register</Link></li>
-        }
-        {
-        user?.email ?<></>:
-        <li className='lg:pt-5'><Link to='/login'>Login</Link></li>
-        }
+       
 
     </>
     return (
@@ -48,8 +41,16 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end pt-3 pr-3">
+                {
+        user?.email ?<button  onClick={handleLogOut} className='btn btn-sm mr-1 bg-green-500 mt-1 log-out'>Log-out</button>:
+        <Link to='/register'><button className='btn btn-sm mr-1 bg-green-500 mt-1 reg-btn'>Register</button></Link>
+        }
+        {
+        user?.email ?<></>:
+        <Link to='/login'><button className='btn btn-sm mr-1 bg-green-500 mt-1 log-btn'>Login</button></Link>
+        }
                     {
-                        user?.email ? <p><img className='h-10 rounded-lg h-u-img' title={user?.displayName} src={user.photoURL} alt="" /></p>:
+                        user?.email ? <p><img className='h-10 mask mask-circle h-u-img w-9' title={user?.displayName} src={user.photoURL} alt="" /></p>:
                         <FaUserAlt></FaUserAlt>
                     }
                 </div>

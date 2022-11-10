@@ -7,7 +7,7 @@ const Footer = () => {
                 <div>
                         <img className='h-20' src={pic} alt="" />
                     <p className="font-bold">
-                        ACME Industries Ltd. <br />Providing reliable tech since 1992
+                        HOME'S food ENT <br />Providing delicious foods since 2012
                     </p>
                     <p>Copyright © 2022 - All right reserved</p>
                 </div>
