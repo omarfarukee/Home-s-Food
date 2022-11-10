@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import ('./Blog.css')
 const Blog = () => {
+    useEffect(() =>{
+        document.title = 'Blog'
+     }, [])
     return (
         <div >
         {/* <div className='ans'>

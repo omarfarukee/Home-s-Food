@@ -1,4 +1,4 @@
-import React,{useState, useContext} from 'react';
+import React,{useState, useContext, useEffect} from 'react';
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaUserAltSlash, FaUserCircle, FaUserClock } from 'react-icons/fa';
@@ -12,6 +12,9 @@ const Login = () => {
      const from = location.state?.from?.pathname || '/'
      const navigate = useNavigate()
 
+     useEffect(() =>{
+        document.title = 'Login...'
+     }, [])
     const handleLogin = (event) =>{
         event.preventDefault()
         const form = event.target
@@ -21,7 +24,25 @@ const Login = () => {
 
         login(email, password)
         .then(result => {
-            const user = result.user
+            const user = result.user;
+            // console.log(user.email);
+            const currentUser = {
+                email:user.email
+            }
+            //get jwt token
+            fetch('https://homes-food-server.vercel.app/jwt', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(currentUser)
+            })    
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                //local storage
+                localStorage.setItem('homesFood-Token', data.token)
+            })
             form.reset('')
             console.log(user)
             setError('')

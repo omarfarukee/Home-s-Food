@@ -47,7 +47,6 @@ function App() {
         },
         {
           path:'/services',
-          // element: <ViewAllFood></ViewAllFood>,
           element: <HomeFoodCard></HomeFoodCard>,
         },
         {
@@ -61,12 +60,12 @@ function App() {
         {
           path:'/services/:id',
           element:<MoreDetails></MoreDetails>,
-          loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+          loader: ({params}) => fetch(`https://homes-food-server.vercel.app/services/${params.id}`)
         },
         {
           path:'/update/:id',
           element:<UpdateReview></UpdateReview>,
-          loader: ({params}) => fetch(`http://localhost:5000/review/${params.id}`)
+          loader: ({params}) => fetch(`https://homes-food-server.vercel.app/review/${params.id}`)
         },
       ]
     }

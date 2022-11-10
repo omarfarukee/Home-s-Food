@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useEffect} from 'react';
 // import pic1 from '../../image/pic1.jpg'
 // import pic3 from '../../image/pic3.jpg'
 // import pic3 from '../../image/pic3.jpg'
@@ -10,6 +10,9 @@ import LimitedCard from './LimitedCard/LimitedCard';
 import SectionOne from './SectionOne/SectionOne';
 import ('./Home.css')
 const Home = () => {
+    useEffect(() =>{
+        document.title = 'Home'
+     }, [])
     return (
         <div>
             <div className="carousel w-full slides ">

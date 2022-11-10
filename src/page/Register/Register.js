@@ -1,9 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import {FaGoogle, FaUserCheck} from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import  ('./Register.css')
 const Register = () => {
+    useEffect(() =>{
+        document.title = 'Register...'
+     }, [])
     const [error, setError] =useState('')
     const {register,updateUserProfile, signInWithGoogle} = useContext(AuthContext)
     const navigate = useNavigate()

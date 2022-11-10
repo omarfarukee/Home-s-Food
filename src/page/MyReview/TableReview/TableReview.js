@@ -3,13 +3,13 @@ import { FaRecycle, FaStar, FaWindowClose,} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import ('../../MoreDetails/MoreDetails.css')
-const TableReview = ({ review, handleDelete }) => {
+const TableReview = ({ review, handleDelete, handleUpdate }) => {
     const {buyerName, img , star, email, message, foodName,serviceId ,photoURL, userPhoto, _id} = review
     const [itemReview ,setItemReview] =useState({})
 
     useEffect(() =>{
 
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://homes-food-server.vercel.app/services/${serviceId}`)
         .then(res => res.json())
         .then(data => setItemReview(data))
     }, [serviceId])

@@ -1,10 +1,14 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {Link} from 'react-router-dom'
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { FaBars, FaPen } from 'react-icons/fa';
 const MapFoodCard = ({ card }) => {
+
     const { _id, img, name, price, details } = card
+    useEffect(() =>{
+        document.title = 'Cards'
+     }, [])
     return (
         <div>
                  

@@ -1,9 +1,12 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { FaAlignRight, FaUserAlt } from 'react-icons/fa';
 import { Link, useLoaderData } from 'react-router-dom'
 import { AuthContext } from '../../ContextProvider/ContextProvider';
 import('./MoreDetails.css')
 const MoreDetails = () => {
+    useEffect(() =>{
+        document.title = 'More Details'
+     }, [])
     const { user } = useContext(AuthContext)
     // console.log(user)
     const details = useLoaderData()
@@ -30,10 +33,11 @@ const MoreDetails = () => {
         }
        
 
-        fetch('http://localhost:5000/review', {
+        fetch('https://homes-food-server.vercel.app/review', {
             method: 'POST',
             headers : {
-                'content-type' : 'application/json'
+                'content-type' : 'application/json',
+                authorization: `Bearer ${localStorage.getItem('homesFood-Token')}`
             },
             body: JSON.stringify(orders)
         })

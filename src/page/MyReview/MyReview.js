@@ -8,9 +8,14 @@ const MyReview = () => {
     const [reviews, setReviews] = useState([])
 
     
-    useEffect(() => {
+    useEffect(() => {     
+            document.title = 'My review'
 
-        fetch(`http://localhost:5000/review?email=${user.email}`)
+        fetch(`https://homes-food-server.vercel.app/review?email=${user?.email}`,{
+            headers:{
+                authorization: `Bearer ${localStorage.getItem('homesFood-Token')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setReviews(data))
 
@@ -19,7 +24,7 @@ const MyReview = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure, want to delete this review?')
         if(proceed){
-            fetch( `http://localhost:5000/review/${id}`, {
+            fetch( `https://homes-food-server.vercel.app/review/${id}`, {
                 method: 'DELETE'
             })
             .then(res => res.json())
@@ -43,6 +48,20 @@ const MyReview = () => {
             })
         }
 }
+// const handleUpdate = id =>{
+//     fetch( `https://homes-food-server.vercel.app/review/${id}`, {
+
+//         method : 'PATCH',
+//         headers: {
+//             'content-type': "application/json"
+//         },
+//         body: JSON.stringify({message : 'approved'})
+//     })
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data)
+//     })
+// }
     return (
         <div>
             <div className='flex justify-center text-2xl mt-2 font-bold'>
@@ -58,6 +77,7 @@ const MyReview = () => {
                                 key={review._id}
                                 review={review}
                                 handleDelete={handleDelete}
+                                // handleUpdate={handleUpdate}
                             ></TableReview>)
                         }
             </div>}

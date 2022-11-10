@@ -5,7 +5,7 @@ const ViewAllFood = () => {
     const [viewsAll, setViewsAll] = useState([])
 
     useEffect(() =>{
-        fetch('http://localhost:5000/services')
+        fetch('https://homes-food-server.vercel.app/services')
         .then(res => res.json())
         .then(data => setViewsAll(data))
     },[])

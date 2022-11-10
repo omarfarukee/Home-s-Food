@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ('../MoreDetails/MoreDetails.css')
 const AddService = () => {
+    useEffect(()=>{
+        document.title = 'Add itema'
+    }, [])
     const handleItem = (event) => {
         event.preventDefault();
         const form = event.target
@@ -23,7 +26,7 @@ const AddService = () => {
         }
        
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://homes-food-server.vercel.app/services', {
             method: 'POST',
             headers : {
                 'content-type' : 'application/json'

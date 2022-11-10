@@ -7,7 +7,8 @@ const LimitedCard = () => {
     const [cards, setCards] = useState([])
 
     useEffect(() =>{
-        fetch('http://localhost:5000/servicess')
+      
+        fetch('https://homes-food-server.vercel.app/servicess')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
