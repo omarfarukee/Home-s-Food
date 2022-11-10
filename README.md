@@ -1,7 +1,10 @@
 # Site name : Home's Food 
 
 ## live site link : 
+https://homes-food.web.app/
+
 ### SerVer repoLink : 
+https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-omarfarukee
 
 ## about this site ---
 - This site is very good for UI .
