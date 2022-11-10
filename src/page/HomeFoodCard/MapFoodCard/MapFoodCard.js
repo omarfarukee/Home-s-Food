@@ -6,9 +6,9 @@ import { FaBars, FaPen } from 'react-icons/fa';
 const MapFoodCard = ({ card }) => {
 
     const { _id, img, name, price, details } = card
-    useEffect(() =>{
-        document.title = 'Cards'
-     }, [])
+    // useEffect(() =>{
+    //     document.title = 'Card'
+    //  }, [])
     return (
         <div>
                  

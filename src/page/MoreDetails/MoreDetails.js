@@ -46,9 +46,14 @@ const MoreDetails = () => {
         .then(data => {
             console.log(data)
             if(data.acknowledged){
-                alert('Review successfully submit')
-                form.reset()
+              
+                if(user?.email){
+                      alert('Review successfully submit')
+                        form.reset()
+
             }
+            }
+            
         })
         .catch(err => console.error(err))
     }
@@ -90,7 +95,7 @@ const MoreDetails = () => {
                     {
                         user?.email ? <>
                         <button className='btn btn-success hover:bg-green-400 hover:text-black'><FaAlignRight className='mr-2'></FaAlignRight> Submit</button>
-                  </>:
+                            </>:
                     <div>
                         <p className='mb-2'><Link to='/login' className='hover:text-green-500 border-b-2 text-blue-500'>{please}</Link></p>
                          <button onClick={pleaseLogin} className='btn btn-success  hover:bg-green-400 hover:text-black'><FaAlignRight className='mr-2'></FaAlignRight>Submit</button>

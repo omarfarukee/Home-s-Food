@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ('../MoreDetails/MoreDetails.css')
 const AddService = () => {
     useEffect(()=>{
-        document.title = 'Add itema'
+        document.title = 'Add items'
     }, [])
     const handleItem = (event) => {
         event.preventDefault();

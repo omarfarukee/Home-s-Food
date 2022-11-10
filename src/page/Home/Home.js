@@ -12,7 +12,7 @@ import SectionTwo from './SectionTwo/SectionTwo';
 import ('./Home.css')
 const Home = () => {
     useEffect(() =>{
-        document.title = 'Home'
+        document.title = 'Homes Food'
      }, [])
     return (
         <div>
